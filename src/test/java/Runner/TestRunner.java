@@ -7,10 +7,9 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features= "src/main/java/Features/",
-		glue= {"src/main/java/stepDefinition/"},
+		features= {"src/test/resources/Features/"},
+		glue= {"src/test/stepDefinition/"},
 		monochrome=false
-		
 		)
 
 public class TestRunner {
